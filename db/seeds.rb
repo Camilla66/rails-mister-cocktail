@@ -5,18 +5,30 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Destroying all cocktails, ingredients and doses..."
+
 Cocktail.destroy_all
 Ingredient.destroy_all
 Dose.destroy_all
+
+puts "Creating new cocktails..."
 
 mojito = Cocktail.create(name: 'Mojito')
 lemonade = Cocktail.create(name: 'Lemonade')
 old_fashioned = Cocktail.create(name: 'Old Fashioned')
 
+puts "Creating new ingredients..."
+
 mint = Ingredient.create(name: "mint leaves")
 lemon = Ingredient.create(name: "lemon")
 ice = Ingredient.create(name: "ice")
+soda = Ingredient.create(name: "soda")
+water = Ingredient.create(name: "water")
+
+puts "Creating new doses..."
 
 leaves = Dose.create(description: '6 leaves', cocktail_id: mojito.id, ingredient_id: mint.id)
 slices = Dose.create(description: '4 slices', cocktail_id: lemonade.id, ingredient_id: lemon.id)
 cubes = Dose.create(description: '3 cubes', cocktail_id: old_fashioned.id, ingredient_id: ice.id)
+
+puts "Finished"

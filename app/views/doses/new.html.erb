@@ -2,7 +2,7 @@
 
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <%= f.input :description %>
-  <%= f.association :ingredient%>
+  <%= f.association :ingredient, as: :radio_buttons%>
   <%= f.submit %>
 <% end %>
 
