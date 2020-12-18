@@ -1,18 +1,15 @@
-
-
-<div class="container">
+<div class="header-index">
+  <h1 class="pt-5">Welcome to my fancy cocktail party!🍸🎉</h1>
+</div>
+<div class="container-index">
   <% @cocktails.each do |cocktail| %>
- <!--    <div class="row">
-      <div class="col-lg-4"> -->
         <div class="card">
           <div class="card-img">
-            <%= cl_image_tag cocktail.photo.key, height: 400, width: 400, crop: :fill%>
+            <%= cl_image_tag cocktail.photo.key, height: 400, width: 350, crop: :fill%>
           </div>
-          <div class="card-text">
+          <div class="card-text mt-5">
             <h1><%= link_to cocktail.name, cocktail_path(cocktail.id)%></h1>
           </div>
         </div>
-    <!--   </div>
-    </div> -->
   <% end %>
 </div>

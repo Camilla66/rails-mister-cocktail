@@ -1,10 +1,26 @@
-.container {
+.header-index {
+  text-align: center;
+}
+
+.container-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin: 50px;
 }
 
 .card {
-  color: #6E85F7;
+  height: 580px;
+  text-align: center;
+  margin: 25px;
+}
+
+.card-img {
+  margin-top: 45px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .navbar {
