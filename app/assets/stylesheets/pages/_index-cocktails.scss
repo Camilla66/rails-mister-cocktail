@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  color: #6E85F7;
+}
+
+.navbar {
+    width: 100%;
+    background-color: gray;
+    height: 60px;
+    position: relative;
+}
+
+.btn {
+  position: absolute;
+  right: 15px;
+}
+
+#home-btn {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
